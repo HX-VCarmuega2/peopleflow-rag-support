@@ -1,0 +1,359 @@
+[
+  {
+    "id": 1,
+    "section": "ACCOUNT ACCESS AND SECURITY",
+    "question": "How can a user reset a forgotten password?",
+    "text": "If a user forgets their password, they must select “Forgot password” on the PeopleFlow HR login page. The system sends a password-reset link to the email address associated with the account. The link remains valid for 30 minutes and can be used only once. If the user requests several reset emails, only the most recently generated link remains valid. Support agents must never manually create or communicate a password on behalf of a user. If the reset email does not arrive, the user should first check the spam or junk folder and then confirm that the email address entered on the reset screen matches the address registered in PeopleFlow HR.",
+    "content": "How can a user reset a forgotten password?\n\nIf a user forgets their password, they must select “Forgot password” on the PeopleFlow HR login page. The system sends a password-reset link to the email address associated with the account. The link remains valid for 30 minutes and can be used only once. If the user requests several reset emails, only the most recently generated link remains valid. Support agents must never manually create or communicate a password on behalf of a user. If the reset email does not arrive, the user should first check the spam or junk folder and then confirm that the email address entered on the reset screen matches the address registered in PeopleFlow HR."
+  },
+  {
+    "id": 2,
+    "section": "ACCOUNT ACCESS AND SECURITY",
+    "question": "How can a logged-in user change their current password?",
+    "text": "A user who knows their current password can change it from Settings > Security > Change Password. The user must enter the current password and then enter the new password twice. New passwords must contain at least 12 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character. Changing a password from the Security page does not require an email link. This procedure is different from the “Forgot password” flow, which is intended for users who cannot log in. After a successful password change, existing browser sessions remain active, but mobile sessions may require the user to authenticate again.",
+    "content": "How can a logged-in user change their current password?\n\nA user who knows their current password can change it from Settings > Security > Change Password. The user must enter the current password and then enter the new password twice. New passwords must contain at least 12 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character. Changing a password from the Security page does not require an email link. This procedure is different from the “Forgot password” flow, which is intended for users who cannot log in. After a successful password change, existing browser sessions remain active, but mobile sessions may require the user to authenticate again."
+  },
+  {
+    "id": 3,
+    "section": "ACCOUNT ACCESS AND SECURITY",
+    "question": "What happens after too many failed login attempts?",
+    "text": "PeopleFlow HR temporarily locks password-based login after 5 failed attempts within a 15-minute period. The lock lasts 20 minutes. During the lockout, entering the correct password does not immediately restore access. Users can either wait until the lock expires or use the “Forgot password” process to create a new password. A successful password reset clears the failed-login counter. Administrators cannot manually remove the temporary lock from the admin dashboard. Repeated lockouts from multiple countries or unfamiliar IP addresses may trigger an additional security alert for the organization’s administrators.",
+    "content": "What happens after too many failed login attempts?\n\nPeopleFlow HR temporarily locks password-based login after 5 failed attempts within a 15-minute period. The lock lasts 20 minutes. During the lockout, entering the correct password does not immediately restore access. Users can either wait until the lock expires or use the “Forgot password” process to create a new password. A successful password reset clears the failed-login counter. Administrators cannot manually remove the temporary lock from the admin dashboard. Repeated lockouts from multiple countries or unfamiliar IP addresses may trigger an additional security alert for the organization’s administrators."
+  },
+  {
+    "id": 4,
+    "section": "ACCOUNT ACCESS AND SECURITY",
+    "question": "Does PeopleFlow HR support multi-factor authentication?",
+    "text": "Yes. Organizations on the Professional and Enterprise plans can enable multi-factor authentication, or MFA, for their users. MFA supports authenticator applications that generate time-based one-time passwords. SMS-based verification is not supported. Organization administrators can require MFA for all users or allow each user to enable it optionally. If MFA is mandatory, a user who has not completed enrollment will be prompted to configure an authenticator application at the next login. Support agents cannot retrieve a user’s MFA secret. If a user loses access to the authenticator, an organization administrator can reset that user’s MFA enrollment, after which the user must configure MFA again.",
+    "content": "Does PeopleFlow HR support multi-factor authentication?\n\nYes. Organizations on the Professional and Enterprise plans can enable multi-factor authentication, or MFA, for their users. MFA supports authenticator applications that generate time-based one-time passwords. SMS-based verification is not supported. Organization administrators can require MFA for all users or allow each user to enable it optionally. If MFA is mandatory, a user who has not completed enrollment will be prompted to configure an authenticator application at the next login. Support agents cannot retrieve a user’s MFA secret. If a user loses access to the authenticator, an organization administrator can reset that user’s MFA enrollment, after which the user must configure MFA again."
+  },
+  {
+    "id": 5,
+    "section": "ACCOUNT ACCESS AND SECURITY",
+    "question": "How long does a PeopleFlow HR session remain active?",
+    "text": "A standard web session expires after 8 hours of inactivity. Activity such as navigating between pages, editing an employee record, or opening a report refreshes the inactivity timer. Simply leaving a browser tab open does not count as activity. Enterprise customers can configure a shorter inactivity timeout, with a minimum of 30 minutes. The mobile application uses a separate authentication token and may keep users signed in longer, although biometric or device-level authentication can still be required by the operating system. Password changes or role changes do not necessarily terminate all active web sessions immediately.\n\n==================================================",
+    "content": "How long does a PeopleFlow HR session remain active?\n\nA standard web session expires after 8 hours of inactivity. Activity such as navigating between pages, editing an employee record, or opening a report refreshes the inactivity timer. Simply leaving a browser tab open does not count as activity. Enterprise customers can configure a shorter inactivity timeout, with a minimum of 30 minutes. The mobile application uses a separate authentication token and may keep users signed in longer, although biometric or device-level authentication can still be required by the operating system. Password changes or role changes do not necessarily terminate all active web sessions immediately.\n\n=================================================="
+  },
+  {
+    "id": 6,
+    "section": "USERS, ROLES, AND PERMISSIONS",
+    "question": "How can an administrator invite a new employee?",
+    "text": "Administrators can invite a new employee from People > Add Employee. At minimum, the administrator must provide the employee’s first name, last name, work email, start date, and assigned legal entity. After the record is created, the administrator can choose “Send invitation” to email the employee an account activation link. The invitation link is valid for 7 days. Creating an employee record does not automatically send the invitation unless the administrator selects the invitation option. If the employee has not activated the account before the link expires, an administrator can send a new invitation from the employee profile.",
+    "content": "How can an administrator invite a new employee?\n\nAdministrators can invite a new employee from People > Add Employee. At minimum, the administrator must provide the employee’s first name, last name, work email, start date, and assigned legal entity. After the record is created, the administrator can choose “Send invitation” to email the employee an account activation link. The invitation link is valid for 7 days. Creating an employee record does not automatically send the invitation unless the administrator selects the invitation option. If the employee has not activated the account before the link expires, an administrator can send a new invitation from the employee profile."
+  },
+  {
+    "id": 7,
+    "section": "USERS, ROLES, AND PERMISSIONS",
+    "question": "What is the difference between an Employee, Manager, HR Admin, and Organization Admin?",
+    "text": "The Employee role can view and update permitted parts of the user’s own profile, request time off, and access assigned documents. Managers can do everything available to Employees and can also view selected information for their direct reports, approve certain requests, and participate in performance processes. HR Admins can manage employee records, time-off policies, documents, reports, and most HR settings, but they cannot manage billing or change the primary organization owner. Organization Admins have the broadest permissions, including user access, organization-wide configuration, security settings, integrations, and billing-related administration. Custom roles are available only on the Enterprise plan.",
+    "content": "What is the difference between an Employee, Manager, HR Admin, and Organization Admin?\n\nThe Employee role can view and update permitted parts of the user’s own profile, request time off, and access assigned documents. Managers can do everything available to Employees and can also view selected information for their direct reports, approve certain requests, and participate in performance processes. HR Admins can manage employee records, time-off policies, documents, reports, and most HR settings, but they cannot manage billing or change the primary organization owner. Organization Admins have the broadest permissions, including user access, organization-wide configuration, security settings, integrations, and billing-related administration. Custom roles are available only on the Enterprise plan."
+  },
+  {
+    "id": 8,
+    "section": "USERS, ROLES, AND PERMISSIONS",
+    "question": "Can a manager view an employee’s salary?",
+    "text": "Managers cannot view salary information by default. Salary fields are considered restricted compensation data. Organization Admins and HR Admins can access compensation data unless the organization has created a more restrictive custom permission configuration. On Enterprise plans, a custom role may grant compensation access to selected managers or finance users. Giving a user the Manager role alone does not grant salary access. If a customer reports that a manager can unexpectedly see compensation, support should verify whether the user also has another role or custom permission set.",
+    "content": "Can a manager view an employee’s salary?\n\nManagers cannot view salary information by default. Salary fields are considered restricted compensation data. Organization Admins and HR Admins can access compensation data unless the organization has created a more restrictive custom permission configuration. On Enterprise plans, a custom role may grant compensation access to selected managers or finance users. Giving a user the Manager role alone does not grant salary access. If a customer reports that a manager can unexpectedly see compensation, support should verify whether the user also has another role or custom permission set."
+  },
+  {
+    "id": 9,
+    "section": "USERS, ROLES, AND PERMISSIONS",
+    "question": "What happens when an employee is deactivated?",
+    "text": "Deactivating an employee prevents that person from logging in but does not delete the employee record. Historical data such as time-off requests, attendance records, documents, performance reviews, and audit-log references remain available according to the organization’s retention settings. Deactivation is normally used when an employee leaves the company. A deactivated employee does not consume an active user seat starting with the next billing calculation. Administrators can reactivate the employee later. Deactivation should not be confused with permanent deletion, which is a separate restricted process and may be subject to data-retention or legal requirements.",
+    "content": "What happens when an employee is deactivated?\n\nDeactivating an employee prevents that person from logging in but does not delete the employee record. Historical data such as time-off requests, attendance records, documents, performance reviews, and audit-log references remain available according to the organization’s retention settings. Deactivation is normally used when an employee leaves the company. A deactivated employee does not consume an active user seat starting with the next billing calculation. Administrators can reactivate the employee later. Deactivation should not be confused with permanent deletion, which is a separate restricted process and may be subject to data-retention or legal requirements."
+  },
+  {
+    "id": 10,
+    "section": "USERS, ROLES, AND PERMISSIONS",
+    "question": "Can an employee belong to more than one team?",
+    "text": "Yes. An employee can belong to one primary team and multiple secondary teams. The primary team is used by default in organizational charts, standard team filters, and some reports. Secondary teams are useful for cross-functional squads, committees, or temporary projects. A user’s manager is not automatically determined from secondary-team membership; the reporting manager is stored separately on the employee profile. Removing an employee from a secondary team does not change the person’s primary team or manager. Some permissions can be scoped to a team, so administrators should confirm whether the permission applies only to the primary team or to all assigned teams.\n\n==================================================",
+    "content": "Can an employee belong to more than one team?\n\nYes. An employee can belong to one primary team and multiple secondary teams. The primary team is used by default in organizational charts, standard team filters, and some reports. Secondary teams are useful for cross-functional squads, committees, or temporary projects. A user’s manager is not automatically determined from secondary-team membership; the reporting manager is stored separately on the employee profile. Removing an employee from a secondary team does not change the person’s primary team or manager. Some permissions can be scoped to a team, so administrators should confirm whether the permission applies only to the primary team or to all assigned teams.\n\n=================================================="
+  },
+  {
+    "id": 11,
+    "section": "TIME OFF AND ABSENCE MANAGEMENT",
+    "question": "How does an employee request vacation?",
+    "text": "Employees request vacation from Time Off > New Request. They select the vacation policy, choose the start and end dates, optionally add a comment, and submit the request. If the policy requires approval, the request remains Pending until the assigned approver accepts or rejects it. If approval is not required, the request is approved automatically. The estimated balance shown before submission reflects the employee’s balance as of the selected dates, including already approved future requests. Employees cannot submit a vacation request that exceeds their available balance when the policy has the “Prevent negative balance” option enabled.",
+    "content": "How does an employee request vacation?\n\nEmployees request vacation from Time Off > New Request. They select the vacation policy, choose the start and end dates, optionally add a comment, and submit the request. If the policy requires approval, the request remains Pending until the assigned approver accepts or rejects it. If approval is not required, the request is approved automatically. The estimated balance shown before submission reflects the employee’s balance as of the selected dates, including already approved future requests. Employees cannot submit a vacation request that exceeds their available balance when the policy has the “Prevent negative balance” option enabled."
+  },
+  {
+    "id": 12,
+    "section": "TIME OFF AND ABSENCE MANAGEMENT",
+    "question": "Can an employee cancel an approved vacation request?",
+    "text": "Employees can cancel an approved vacation request if the first day of the request has not yet started and the organization allows employee cancellations. The request is then marked Cancelled and the deducted balance is restored. If the vacation has already started, employees cannot cancel it themselves. An HR Admin or Organization Admin can edit or cancel a past or in-progress request if the user has the required permission. Cancelling a vacation request is different from deleting it: the cancelled request remains visible in the history and audit trail.",
+    "content": "Can an employee cancel an approved vacation request?\n\nEmployees can cancel an approved vacation request if the first day of the request has not yet started and the organization allows employee cancellations. The request is then marked Cancelled and the deducted balance is restored. If the vacation has already started, employees cannot cancel it themselves. An HR Admin or Organization Admin can edit or cancel a past or in-progress request if the user has the required permission. Cancelling a vacation request is different from deleting it: the cancelled request remains visible in the history and audit trail."
+  },
+  {
+    "id": 13,
+    "section": "TIME OFF AND ABSENCE MANAGEMENT",
+    "question": "Why is a vacation balance different from the annual entitlement?",
+    "text": "Annual entitlement is the total amount of vacation granted for a full entitlement period, while the current available balance can be different because of accrual rules, used days, approved future requests, carryover, manual adjustments, or the employee’s start date. For example, a policy may grant 24 days per year but accrue 2 days per month. An employee in March may therefore have less than 24 days available. Support should not assume that a lower balance is incorrect merely because it differs from the yearly entitlement. The employee’s Time Off > Balance Details page shows grants, accruals, deductions, carryover, and adjustments.",
+    "content": "Why is a vacation balance different from the annual entitlement?\n\nAnnual entitlement is the total amount of vacation granted for a full entitlement period, while the current available balance can be different because of accrual rules, used days, approved future requests, carryover, manual adjustments, or the employee’s start date. For example, a policy may grant 24 days per year but accrue 2 days per month. An employee in March may therefore have less than 24 days available. Support should not assume that a lower balance is incorrect merely because it differs from the yearly entitlement. The employee’s Time Off > Balance Details page shows grants, accruals, deductions, carryover, and adjustments."
+  },
+  {
+    "id": 14,
+    "section": "TIME OFF AND ABSENCE MANAGEMENT",
+    "question": "How are half-day absences handled?",
+    "text": "A time-off policy can allow full-day, half-day, or hourly requests. When half days are enabled, employees can select either the first half or the second half of the workday. A half-day request deducts 0.5 days from a day-based balance. The exact working hours represented by a half day depend on the employee’s work schedule and are not always equal to four hours. If a policy is configured as hourly, employees must request a number of hours instead of selecting a half day. Administrators configure the allowed request units separately for each time-off policy.",
+    "content": "How are half-day absences handled?\n\nA time-off policy can allow full-day, half-day, or hourly requests. When half days are enabled, employees can select either the first half or the second half of the workday. A half-day request deducts 0.5 days from a day-based balance. The exact working hours represented by a half day depend on the employee’s work schedule and are not always equal to four hours. If a policy is configured as hourly, employees must request a number of hours instead of selecting a half day. Administrators configure the allowed request units separately for each time-off policy."
+  },
+  {
+    "id": 15,
+    "section": "TIME OFF AND ABSENCE MANAGEMENT",
+    "question": "What happens to unused vacation at the end of the year?",
+    "text": "Unused vacation is handled according to each time-off policy’s carryover rules. A policy can expire all unused days, carry over the full remaining balance, or carry over up to a configured maximum. Administrators can also set a carryover expiration date. For example, a company may allow employees to carry over up to 5 days into the next year but require those days to be used by March 31. Carryover is processed automatically at the start of the new entitlement period. Changing the policy after carryover has been processed does not automatically recalculate previous balances.\n\n==================================================",
+    "content": "What happens to unused vacation at the end of the year?\n\nUnused vacation is handled according to each time-off policy’s carryover rules. A policy can expire all unused days, carry over the full remaining balance, or carry over up to a configured maximum. Administrators can also set a carryover expiration date. For example, a company may allow employees to carry over up to 5 days into the next year but require those days to be used by March 31. Carryover is processed automatically at the start of the new entitlement period. Changing the policy after carryover has been processed does not automatically recalculate previous balances.\n\n=================================================="
+  },
+  {
+    "id": 16,
+    "section": "ATTENDANCE AND WORK SCHEDULES",
+    "question": "How does clock-in and clock-out work?",
+    "text": "Employees with attendance tracking enabled can clock in and out from the Attendance page or mobile application. Each clock event stores a timestamp and, if enabled by the organization and permitted by the device, may also store approximate location information. Employees can have only one open attendance session at a time. If an employee forgets to clock out, the session remains open until the employee or an authorized administrator corrects it. PeopleFlow HR does not automatically infer a clock-out time based on the employee’s scheduled end time.",
+    "content": "How does clock-in and clock-out work?\n\nEmployees with attendance tracking enabled can clock in and out from the Attendance page or mobile application. Each clock event stores a timestamp and, if enabled by the organization and permitted by the device, may also store approximate location information. Employees can have only one open attendance session at a time. If an employee forgets to clock out, the session remains open until the employee or an authorized administrator corrects it. PeopleFlow HR does not automatically infer a clock-out time based on the employee’s scheduled end time."
+  },
+  {
+    "id": 17,
+    "section": "ATTENDANCE AND WORK SCHEDULES",
+    "question": "Can an employee edit their own attendance record?",
+    "text": "This depends on organization settings. Administrators can allow employees to propose corrections to attendance records. When enabled, the employee selects the record, enters the corrected clock-in or clock-out time, and provides a reason. The original values remain stored in the audit history. Depending on the organization’s workflow, the correction may require manager or HR approval before becoming effective. If self-service attendance corrections are disabled, only users with attendance-management permission can edit the record.",
+    "content": "Can an employee edit their own attendance record?\n\nThis depends on organization settings. Administrators can allow employees to propose corrections to attendance records. When enabled, the employee selects the record, enters the corrected clock-in or clock-out time, and provides a reason. The original values remain stored in the audit history. Depending on the organization’s workflow, the correction may require manager or HR approval before becoming effective. If self-service attendance corrections are disabled, only users with attendance-management permission can edit the record."
+  },
+  {
+    "id": 18,
+    "section": "ATTENDANCE AND WORK SCHEDULES",
+    "question": "How are overtime hours calculated?",
+    "text": "PeopleFlow HR calculates overtime only when an overtime rule has been configured for the employee’s work schedule or legal entity. Overtime is based on recorded payable work time after configured breaks and can be calculated daily, weekly, or according to a custom threshold. For example, a weekly rule may classify time above 40 payable hours as overtime. Simply working beyond a scheduled end time does not guarantee that the extra time is counted as overtime. Approved time off can be included or excluded from overtime thresholds depending on the rule configuration.",
+    "content": "How are overtime hours calculated?\n\nPeopleFlow HR calculates overtime only when an overtime rule has been configured for the employee’s work schedule or legal entity. Overtime is based on recorded payable work time after configured breaks and can be calculated daily, weekly, or according to a custom threshold. For example, a weekly rule may classify time above 40 payable hours as overtime. Simply working beyond a scheduled end time does not guarantee that the extra time is counted as overtime. Approved time off can be included or excluded from overtime thresholds depending on the rule configuration."
+  },
+  {
+    "id": 19,
+    "section": "ATTENDANCE AND WORK SCHEDULES",
+    "question": "What is the difference between a work schedule and an attendance record?",
+    "text": "A work schedule defines when an employee is expected to work, such as Monday through Friday from 09:00 to 17:00. An attendance record represents the employee’s actual recorded working time, such as clocking in at 09:07 and clocking out at 17:18. Schedules are planning data; attendance records are actual-time data. Changing a future schedule does not create or modify attendance automatically. Likewise, editing an attendance record does not alter the employee’s assigned work schedule.\n\n==================================================",
+    "content": "What is the difference between a work schedule and an attendance record?\n\nA work schedule defines when an employee is expected to work, such as Monday through Friday from 09:00 to 17:00. An attendance record represents the employee’s actual recorded working time, such as clocking in at 09:07 and clocking out at 17:18. Schedules are planning data; attendance records are actual-time data. Changing a future schedule does not create or modify attendance automatically. Likewise, editing an attendance record does not alter the employee’s assigned work schedule.\n\n=================================================="
+  },
+  {
+    "id": 20,
+    "section": "EMPLOYEE DOCUMENTS",
+    "question": "How can HR upload a document for an employee?",
+    "text": "HR Admins and Organization Admins can upload employee-specific files from the Documents section of an employee profile. The uploader selects a document category, adds an optional description, and chooses whether the employee can view the file. Supported common formats include PDF, DOCX, XLSX, JPG, and PNG. The maximum file size is 25 MB per file. Uploading a document does not automatically require the employee’s signature. If a signature is required, the document must be sent through a workflow that has e-signature enabled.",
+    "content": "How can HR upload a document for an employee?\n\nHR Admins and Organization Admins can upload employee-specific files from the Documents section of an employee profile. The uploader selects a document category, adds an optional description, and chooses whether the employee can view the file. Supported common formats include PDF, DOCX, XLSX, JPG, and PNG. The maximum file size is 25 MB per file. Uploading a document does not automatically require the employee’s signature. If a signature is required, the document must be sent through a workflow that has e-signature enabled."
+  },
+  {
+    "id": 21,
+    "section": "EMPLOYEE DOCUMENTS",
+    "question": "How does electronic signature work?",
+    "text": "Electronic signature is available on Professional and Enterprise plans. An administrator creates or selects a document, assigns one or more signers, and sends a signature request. Each signer receives a notification and can open the document from the Tasks area. The system records the signer, timestamp, completion status, and audit information. PeopleFlow HR’s standard electronic signature is intended for ordinary HR acknowledgements and agreements, but customers are responsible for determining whether it satisfies the legal requirements for a particular document or jurisdiction.",
+    "content": "How does electronic signature work?\n\nElectronic signature is available on Professional and Enterprise plans. An administrator creates or selects a document, assigns one or more signers, and sends a signature request. Each signer receives a notification and can open the document from the Tasks area. The system records the signer, timestamp, completion status, and audit information. PeopleFlow HR’s standard electronic signature is intended for ordinary HR acknowledgements and agreements, but customers are responsible for determining whether it satisfies the legal requirements for a particular document or jurisdiction."
+  },
+  {
+    "id": 22,
+    "section": "EMPLOYEE DOCUMENTS",
+    "question": "Can a deleted employee document be recovered?",
+    "text": "A document deleted from an employee profile is moved to the organization’s document trash for 30 days. During that period, an HR Admin or Organization Admin with document-management permission can restore it. After 30 days, the document is permanently removed from standard product storage and cannot be restored through the admin interface. Audit-log entries showing that the document existed and was deleted may remain according to the audit retention period. Documents removed because of a formal privacy deletion request may follow a different deletion process and may not be recoverable from trash.\n\n==================================================",
+    "content": "Can a deleted employee document be recovered?\n\nA document deleted from an employee profile is moved to the organization’s document trash for 30 days. During that period, an HR Admin or Organization Admin with document-management permission can restore it. After 30 days, the document is permanently removed from standard product storage and cannot be restored through the admin interface. Audit-log entries showing that the document existed and was deleted may remain according to the audit retention period. Documents removed because of a formal privacy deletion request may follow a different deletion process and may not be recoverable from trash.\n\n=================================================="
+  },
+  {
+    "id": 23,
+    "section": "PAYROLL AND COMPENSATION",
+    "question": "Does PeopleFlow HR run payroll and send salary payments?",
+    "text": "PeopleFlow HR does not directly transfer salaries to employee bank accounts in the standard product. Instead, it stores HR and compensation data and can generate payroll-ready exports for supported payroll providers or CSV workflows. Some integrations can synchronize employee and compensation data with external payroll systems, but the final payroll calculation and payment are performed by the connected payroll provider. Customers should not tell employees that PeopleFlow HR itself has paid or withheld a salary unless they are referring to a separate payroll service explicitly contracted by the organization.",
+    "content": "Does PeopleFlow HR run payroll and send salary payments?\n\nPeopleFlow HR does not directly transfer salaries to employee bank accounts in the standard product. Instead, it stores HR and compensation data and can generate payroll-ready exports for supported payroll providers or CSV workflows. Some integrations can synchronize employee and compensation data with external payroll systems, but the final payroll calculation and payment are performed by the connected payroll provider. Customers should not tell employees that PeopleFlow HR itself has paid or withheld a salary unless they are referring to a separate payroll service explicitly contracted by the organization."
+  },
+  {
+    "id": 24,
+    "section": "PAYROLL AND COMPENSATION",
+    "question": "How can an administrator export payroll data?",
+    "text": "Authorized HR Admins, Organization Admins, or users with payroll-export permission can create an export from Payroll > Exports. The administrator selects the legal entity, payroll period, and export format. Before generating the file, PeopleFlow HR validates common issues such as missing employee identifiers or incomplete required compensation fields. Generated exports are stored in the export history for 90 days. Payroll files contain sensitive information and should be downloaded only by authorized users. Exporting payroll data does not lock employee records, so changes made afterward are not automatically reflected in a previously generated export.",
+    "content": "How can an administrator export payroll data?\n\nAuthorized HR Admins, Organization Admins, or users with payroll-export permission can create an export from Payroll > Exports. The administrator selects the legal entity, payroll period, and export format. Before generating the file, PeopleFlow HR validates common issues such as missing employee identifiers or incomplete required compensation fields. Generated exports are stored in the export history for 90 days. Payroll files contain sensitive information and should be downloaded only by authorized users. Exporting payroll data does not lock employee records, so changes made afterward are not automatically reflected in a previously generated export."
+  },
+  {
+    "id": 25,
+    "section": "PAYROLL AND COMPENSATION",
+    "question": "Can salary changes be scheduled for a future date?",
+    "text": "Yes. Authorized users can add a compensation change with an effective date in the future. The current salary remains active until the effective date. Future compensation changes can be edited or removed before they become effective if the user has the appropriate permission. Reports that use a historical “as of” date select the compensation value effective on that date. A future salary entry does not immediately change payroll exports for earlier payroll periods.\n\n==================================================",
+    "content": "Can salary changes be scheduled for a future date?\n\nYes. Authorized users can add a compensation change with an effective date in the future. The current salary remains active until the effective date. Future compensation changes can be edited or removed before they become effective if the user has the appropriate permission. Reports that use a historical “as of” date select the compensation value effective on that date. A future salary entry does not immediately change payroll exports for earlier payroll periods.\n\n=================================================="
+  },
+  {
+    "id": 26,
+    "section": "PERFORMANCE AND FEEDBACK",
+    "question": "How are performance review cycles launched?",
+    "text": "HR Admins can create a review cycle from Performance > Review Cycles. A cycle includes a name, review period, participants, reviewers, question template, and deadlines. Before launch, the cycle remains in Draft status and can be edited freely. After launch, participants receive assigned review tasks. Some structural settings become restricted once responses have been submitted in order to preserve consistency. Adding a new employee to the company after a cycle has launched does not automatically add that person to the existing cycle unless an administrator updates the participant list.",
+    "content": "How are performance review cycles launched?\n\nHR Admins can create a review cycle from Performance > Review Cycles. A cycle includes a name, review period, participants, reviewers, question template, and deadlines. Before launch, the cycle remains in Draft status and can be edited freely. After launch, participants receive assigned review tasks. Some structural settings become restricted once responses have been submitted in order to preserve consistency. Adding a new employee to the company after a cycle has launched does not automatically add that person to the existing cycle unless an administrator updates the participant list."
+  },
+  {
+    "id": 27,
+    "section": "PERFORMANCE AND FEEDBACK",
+    "question": "Can employees see manager feedback before the review is finalized?",
+    "text": "Not necessarily. Visibility depends on the review template and release settings. Organizations can keep manager responses hidden until the review is finalized and released, or allow selected feedback to become visible earlier. Draft feedback is never visible to the employee unless the organization specifically uses a collaborative form designed for shared input. If a customer reports that an employee cannot see completed manager feedback, support should check whether the review results have actually been released.",
+    "content": "Can employees see manager feedback before the review is finalized?\n\nNot necessarily. Visibility depends on the review template and release settings. Organizations can keep manager responses hidden until the review is finalized and released, or allow selected feedback to become visible earlier. Draft feedback is never visible to the employee unless the organization specifically uses a collaborative form designed for shared input. If a customer reports that an employee cannot see completed manager feedback, support should check whether the review results have actually been released."
+  },
+  {
+    "id": 28,
+    "section": "PERFORMANCE AND FEEDBACK",
+    "question": "Can a submitted performance review be edited?",
+    "text": "A submitted review is normally locked for the reviewer. An HR Admin with performance-management permission can reopen a submitted review if the cycle is still active and the results have not been permanently archived. Reopening changes the task back to an editable state and is recorded in the audit trail. If results have already been released to the employee, administrators should consider the organization’s internal review policy before reopening and changing the content.\n\n==================================================",
+    "content": "Can a submitted performance review be edited?\n\nA submitted review is normally locked for the reviewer. An HR Admin with performance-management permission can reopen a submitted review if the cycle is still active and the results have not been permanently archived. Reopening changes the task back to an editable state and is recorded in the audit trail. If results have already been released to the employee, administrators should consider the organization’s internal review policy before reopening and changing the content.\n\n=================================================="
+  },
+  {
+    "id": 29,
+    "section": "ONBOARDING AND OFFBOARDING",
+    "question": "How are onboarding tasks assigned?",
+    "text": "Onboarding tasks can be created individually or from an onboarding template. Templates may include tasks for the new employee, manager, HR team, IT team, or another designated owner. When a template is applied to an employee, task due dates are calculated relative to the employee’s start date, such as 7 days before or 3 days after the start date. If the employee’s start date changes later, existing task due dates do not automatically move unless the administrator chooses to recalculate the onboarding schedule.",
+    "content": "How are onboarding tasks assigned?\n\nOnboarding tasks can be created individually or from an onboarding template. Templates may include tasks for the new employee, manager, HR team, IT team, or another designated owner. When a template is applied to an employee, task due dates are calculated relative to the employee’s start date, such as 7 days before or 3 days after the start date. If the employee’s start date changes later, existing task due dates do not automatically move unless the administrator chooses to recalculate the onboarding schedule."
+  },
+  {
+    "id": 30,
+    "section": "ONBOARDING AND OFFBOARDING",
+    "question": "Can onboarding start before the employee’s first working day?",
+    "text": "Yes. An employee record can be created with a future start date, and selected onboarding tasks can be scheduled before that date. If the organization sends the account invitation early, the employee can activate the account and complete permitted preboarding tasks before the first working day. Access to sensitive modules remains governed by the employee’s role and permissions. Organizations should avoid assigning internal-only information to preboarding users unless it is appropriate for them to access before employment begins.",
+    "content": "Can onboarding start before the employee’s first working day?\n\nYes. An employee record can be created with a future start date, and selected onboarding tasks can be scheduled before that date. If the organization sends the account invitation early, the employee can activate the account and complete permitted preboarding tasks before the first working day. Access to sensitive modules remains governed by the employee’s role and permissions. Organizations should avoid assigning internal-only information to preboarding users unless it is appropriate for them to access before employment begins."
+  },
+  {
+    "id": 31,
+    "section": "ONBOARDING AND OFFBOARDING",
+    "question": "What happens during offboarding?",
+    "text": "Offboarding can use a task template similar to onboarding. Typical tasks include returning equipment, revoking external-system access, completing exit documentation, and confirming the employee’s final working day. PeopleFlow HR can deactivate the user account on a selected date, but it does not automatically disable accounts in external services unless a configured integration supports that action. Historical HR information remains in PeopleFlow HR after deactivation according to retention rules.\n\n==================================================",
+    "content": "What happens during offboarding?\n\nOffboarding can use a task template similar to onboarding. Typical tasks include returning equipment, revoking external-system access, completing exit documentation, and confirming the employee’s final working day. PeopleFlow HR can deactivate the user account on a selected date, but it does not automatically disable accounts in external services unless a configured integration supports that action. Historical HR information remains in PeopleFlow HR after deactivation according to retention rules.\n\n=================================================="
+  },
+  {
+    "id": 32,
+    "section": "REPORTS AND ANALYTICS",
+    "question": "Why does a report show fewer employees than expected?",
+    "text": "Reports can return fewer employees because of filters, permissions, legal-entity scope, employment status, or the report’s selected date. For example, a report configured to show active employees “as of” June 30 will not include someone whose start date was July 1. A manager may also see only employees within that manager’s permitted scope, while an HR Admin sees a broader population. Support should first verify active filters and the report date before assuming employee records are missing.",
+    "content": "Why does a report show fewer employees than expected?\n\nReports can return fewer employees because of filters, permissions, legal-entity scope, employment status, or the report’s selected date. For example, a report configured to show active employees “as of” June 30 will not include someone whose start date was July 1. A manager may also see only employees within that manager’s permitted scope, while an HR Admin sees a broader population. Support should first verify active filters and the report date before assuming employee records are missing."
+  },
+  {
+    "id": 33,
+    "section": "REPORTS AND ANALYTICS",
+    "question": "How often are dashboard metrics updated?",
+    "text": "Most operational dashboards are updated within approximately 15 minutes after the underlying data changes. Some analytics reports use scheduled aggregation and may refresh only once per hour. Payroll exports and employee profile pages use current transactional data and are not subject to the analytics refresh delay. If a customer changes a record and immediately checks a dashboard, a short delay may therefore be expected. Delays longer than two hours should be investigated if the source record is correct and the relevant report filters include it.",
+    "content": "How often are dashboard metrics updated?\n\nMost operational dashboards are updated within approximately 15 minutes after the underlying data changes. Some analytics reports use scheduled aggregation and may refresh only once per hour. Payroll exports and employee profile pages use current transactional data and are not subject to the analytics refresh delay. If a customer changes a record and immediately checks a dashboard, a short delay may therefore be expected. Delays longer than two hours should be investigated if the source record is correct and the relevant report filters include it."
+  },
+  {
+    "id": 34,
+    "section": "REPORTS AND ANALYTICS",
+    "question": "Can reports be exported?",
+    "text": "Yes. Users with permission to view a report can usually export the currently filtered result as CSV or XLSX. Some visual dashboards also support PDF export. The exported file reflects the filters and date range applied at the moment the export is generated. Export permissions follow report-access permissions; being able to export does not grant access to fields that the user cannot already view. Large exports may be processed asynchronously and appear in the Exports area when complete.\n\n==================================================",
+    "content": "Can reports be exported?\n\nYes. Users with permission to view a report can usually export the currently filtered result as CSV or XLSX. Some visual dashboards also support PDF export. The exported file reflects the filters and date range applied at the moment the export is generated. Export permissions follow report-access permissions; being able to export does not grant access to fields that the user cannot already view. Large exports may be processed asynchronously and appear in the Exports area when complete.\n\n=================================================="
+  },
+  {
+    "id": 35,
+    "section": "INTEGRATIONS AND API",
+    "question": "Does PeopleFlow HR have an API?",
+    "text": "Yes. Enterprise customers can use the PeopleFlow HR REST API to access supported employee, organization, time-off, and attendance resources. API access must be enabled by an Organization Admin. Authentication uses API credentials created for an integration rather than a normal employee password. API credentials should be stored securely and never embedded in public client-side code. API access is subject to rate limits, and not every field visible in the PeopleFlow HR interface is necessarily exposed through the API.",
+    "content": "Does PeopleFlow HR have an API?\n\nYes. Enterprise customers can use the PeopleFlow HR REST API to access supported employee, organization, time-off, and attendance resources. API access must be enabled by an Organization Admin. Authentication uses API credentials created for an integration rather than a normal employee password. API credentials should be stored securely and never embedded in public client-side code. API access is subject to rate limits, and not every field visible in the PeopleFlow HR interface is necessarily exposed through the API."
+  },
+  {
+    "id": 36,
+    "section": "INTEGRATIONS AND API",
+    "question": "What happens if an integration sync fails?",
+    "text": "When an integration sync fails, PeopleFlow HR records the failed run in the integration history with an error status and, when available, a provider error message. Many integrations retry temporary failures automatically. Repeated failures caused by invalid credentials, revoked permissions, or incorrect configuration usually require administrator action. Support should review the most recent sync status and error details before asking the customer to reconnect the integration. A failed synchronization does not automatically roll back changes that were successfully synchronized in earlier steps.",
+    "content": "What happens if an integration sync fails?\n\nWhen an integration sync fails, PeopleFlow HR records the failed run in the integration history with an error status and, when available, a provider error message. Many integrations retry temporary failures automatically. Repeated failures caused by invalid credentials, revoked permissions, or incorrect configuration usually require administrator action. Support should review the most recent sync status and error details before asking the customer to reconnect the integration. A failed synchronization does not automatically roll back changes that were successfully synchronized in earlier steps."
+  },
+  {
+    "id": 37,
+    "section": "INTEGRATIONS AND API",
+    "question": "Can the same employee be connected to records from two external systems?",
+    "text": "Yes, but each integration maintains its own external identifier mapping. For example, one employee may have a payroll-provider ID and a separate identity-provider ID. These mappings do not need to match. Administrators should avoid manually editing integration identifiers unless instructed by the integration documentation, because an incorrect mapping can create duplicate records or prevent updates from reaching the correct employee.\n\n==================================================",
+    "content": "Can the same employee be connected to records from two external systems?\n\nYes, but each integration maintains its own external identifier mapping. For example, one employee may have a payroll-provider ID and a separate identity-provider ID. These mappings do not need to match. Administrators should avoid manually editing integration identifiers unless instructed by the integration documentation, because an incorrect mapping can create duplicate records or prevent updates from reaching the correct employee.\n\n=================================================="
+  },
+  {
+    "id": 38,
+    "section": "NOTIFICATIONS AND EMAIL",
+    "question": "Why did a user not receive an email notification?",
+    "text": "First confirm that the action actually generates an email notification and that the user’s email address is correct. Then check whether the user has disabled optional notification categories in Settings > Notifications. Mandatory security emails, such as password-reset messages, cannot be disabled. The user should also check spam or quarantine folders. PeopleFlow HR may suppress repeated delivery attempts to an address that previously returned a permanent bounce. In that case, support may need to clear the suppression after the email address has been corrected.",
+    "content": "Why did a user not receive an email notification?\n\nFirst confirm that the action actually generates an email notification and that the user’s email address is correct. Then check whether the user has disabled optional notification categories in Settings > Notifications. Mandatory security emails, such as password-reset messages, cannot be disabled. The user should also check spam or quarantine folders. PeopleFlow HR may suppress repeated delivery attempts to an address that previously returned a permanent bounce. In that case, support may need to clear the suppression after the email address has been corrected."
+  },
+  {
+    "id": 39,
+    "section": "NOTIFICATIONS AND EMAIL",
+    "question": "Can users disable all notifications?",
+    "text": "No. Users can disable many optional notifications, such as reminders or selected workflow updates, but they cannot disable mandatory security and account messages. Password resets, important account-security alerts, and certain legally or operationally required messages are always sent when applicable. Organization administrators can configure some notification defaults, but they cannot disable security-critical communications for all users.\n\n==================================================",
+    "content": "Can users disable all notifications?\n\nNo. Users can disable many optional notifications, such as reminders or selected workflow updates, but they cannot disable mandatory security and account messages. Password resets, important account-security alerts, and certain legally or operationally required messages are always sent when applicable. Organization administrators can configure some notification defaults, but they cannot disable security-critical communications for all users.\n\n=================================================="
+  },
+  {
+    "id": 40,
+    "section": "DATA PRIVACY, RETENTION, AND AUDIT",
+    "question": "How long are audit logs retained?",
+    "text": "Standard and Professional plans retain audit-log events for 12 months. Enterprise customers can configure extended audit retention up to 36 months. Audit logs may include events such as role changes, employee-record updates, document deletion, compensation changes, and security-setting modifications. Audit retention is separate from the retention period for the underlying employee or document data. Removing an employee record does not necessarily remove historical audit events immediately.",
+    "content": "How long are audit logs retained?\n\nStandard and Professional plans retain audit-log events for 12 months. Enterprise customers can configure extended audit retention up to 36 months. Audit logs may include events such as role changes, employee-record updates, document deletion, compensation changes, and security-setting modifications. Audit retention is separate from the retention period for the underlying employee or document data. Removing an employee record does not necessarily remove historical audit events immediately."
+  },
+  {
+    "id": 41,
+    "section": "DATA PRIVACY, RETENTION, AND AUDIT",
+    "question": "Can an organization permanently delete an employee’s personal data?",
+    "text": "Permanent deletion is available only to authorized administrators and should be used according to the organization’s legal and privacy obligations. Deactivation alone does not delete personal data. A privacy deletion process can remove or anonymize eligible employee information, but some information may need to be retained when required for legal, financial, security, or audit purposes. Because deletion can be irreversible, PeopleFlow HR requires an explicit confirmation step. Support agents should not promise that every historical reference will be removed in every jurisdiction.",
+    "content": "Can an organization permanently delete an employee’s personal data?\n\nPermanent deletion is available only to authorized administrators and should be used according to the organization’s legal and privacy obligations. Deactivation alone does not delete personal data. A privacy deletion process can remove or anonymize eligible employee information, but some information may need to be retained when required for legal, financial, security, or audit purposes. Because deletion can be irreversible, PeopleFlow HR requires an explicit confirmation step. Support agents should not promise that every historical reference will be removed in every jurisdiction."
+  },
+  {
+    "id": 42,
+    "section": "DATA PRIVACY, RETENTION, AND AUDIT",
+    "question": "Where can administrators see who changed an employee record?",
+    "text": "Authorized administrators can review relevant changes in the Audit Log. Events typically include the user who performed the action, the timestamp, the affected resource, and the type of change. For sensitive fields, the audit log may indicate that a field changed without displaying both the previous and new values. The audit log is intended for accountability and investigation, not as a complete version-history system for every field.\n\n==================================================",
+    "content": "Where can administrators see who changed an employee record?\n\nAuthorized administrators can review relevant changes in the Audit Log. Events typically include the user who performed the action, the timestamp, the affected resource, and the type of change. For sensitive fields, the audit log may indicate that a field changed without displaying both the previous and new values. The audit log is intended for accountability and investigation, not as a complete version-history system for every field.\n\n=================================================="
+  },
+  {
+    "id": 43,
+    "section": "BILLING AND SUBSCRIPTION",
+    "question": "When does a deactivated employee stop counting toward billing?",
+    "text": "For plans billed by active user seats, a deactivated employee stops counting as an active seat in the next billing calculation after deactivation. The exact financial effect depends on the customer’s billing cycle and contract. Deactivating an employee does not automatically issue an immediate refund for an already invoiced period. Customers with annual contracts or committed seat minimums may continue to be billed according to the committed quantity even when the number of active employees falls below that amount.",
+    "content": "When does a deactivated employee stop counting toward billing?\n\nFor plans billed by active user seats, a deactivated employee stops counting as an active seat in the next billing calculation after deactivation. The exact financial effect depends on the customer’s billing cycle and contract. Deactivating an employee does not automatically issue an immediate refund for an already invoiced period. Customers with annual contracts or committed seat minimums may continue to be billed according to the committed quantity even when the number of active employees falls below that amount."
+  },
+  {
+    "id": 44,
+    "section": "BILLING AND SUBSCRIPTION",
+    "question": "What happens if the organization exceeds its contracted seat limit?",
+    "text": "Depending on the subscription, PeopleFlow HR may allow additional users temporarily and flag the account for a billing adjustment, or it may prevent administrators from activating more users until additional seats are purchased. The behavior is defined by the organization’s plan and contract. Support should check subscription details before telling a customer whether a new employee can be activated.\n\n==================================================",
+    "content": "What happens if the organization exceeds its contracted seat limit?\n\nDepending on the subscription, PeopleFlow HR may allow additional users temporarily and flag the account for a billing adjustment, or it may prevent administrators from activating more users until additional seats are purchased. The behavior is defined by the organization’s plan and contract. Support should check subscription details before telling a customer whether a new employee can be activated.\n\n=================================================="
+  },
+  {
+    "id": 45,
+    "section": "TROUBLESHOOTING AND PRODUCT BEHAVIOR",
+    "question": "Why can an administrator see a feature that another administrator cannot?",
+    "text": "Two administrators may see different features because of plan availability, legal-entity scope, custom roles, feature flags, beta enrollment, or organization settings. The title “administrator” alone does not guarantee identical permissions. Support should compare the users’ exact roles and permission sets, confirm whether both users belong to the same organization and legal entity, and verify whether the feature is enabled for the account.",
+    "content": "Why can an administrator see a feature that another administrator cannot?\n\nTwo administrators may see different features because of plan availability, legal-entity scope, custom roles, feature flags, beta enrollment, or organization settings. The title “administrator” alone does not guarantee identical permissions. Support should compare the users’ exact roles and permission sets, confirm whether both users belong to the same organization and legal entity, and verify whether the feature is enabled for the account."
+  },
+  {
+    "id": 46,
+    "section": "TROUBLESHOOTING AND PRODUCT BEHAVIOR",
+    "question": "Why does a recently changed setting appear unchanged?",
+    "text": "Some settings take effect immediately, while others may be cached or applied only to new transactions. The user should first refresh the page or sign out and back in. Analytics-related changes may take up to one hour to appear in aggregated dashboards. Policy changes may apply prospectively and therefore not modify requests or balances that were already calculated. Support should identify which setting was changed before recommending that data be recreated.",
+    "content": "Why does a recently changed setting appear unchanged?\n\nSome settings take effect immediately, while others may be cached or applied only to new transactions. The user should first refresh the page or sign out and back in. Analytics-related changes may take up to one hour to appear in aggregated dashboards. Policy changes may apply prospectively and therefore not modify requests or balances that were already calculated. Support should identify which setting was changed before recommending that data be recreated."
+  },
+  {
+    "id": 47,
+    "section": "TROUBLESHOOTING AND PRODUCT BEHAVIOR",
+    "question": "Is deleting a record the same as deactivating it?",
+    "text": "No. Deactivation normally preserves the record and its history while preventing future active use, such as employee login. Deletion is intended to remove data and may be permanent after any applicable recovery window. For employees, deactivation is the standard process when someone leaves the company. For documents, deletion first moves the file to trash for 30 days unless a privacy-specific deletion flow applies. Support should avoid using “delete” and “deactivate” interchangeably.\n\n==================================================",
+    "content": "Is deleting a record the same as deactivating it?\n\nNo. Deactivation normally preserves the record and its history while preventing future active use, such as employee login. Deletion is intended to remove data and may be permanent after any applicable recovery window. For employees, deactivation is the standard process when someone leaves the company. For documents, deletion first moves the file to trash for 30 days unless a privacy-specific deletion flow applies. Support should avoid using “delete” and “deactivate” interchangeably.\n\n=================================================="
+  },
+  {
+    "id": 48,
+    "section": "SUPPORT ESCALATION",
+    "question": "When should a support ticket be escalated to the technical team?",
+    "text": "Support should escalate a case when normal troubleshooting has been completed and there is evidence of a product defect, unexpected data inconsistency, repeated integration failure without a configuration explanation, a security concern, or a service error affecting multiple users. Before escalation, the ticket should include the organization identifier, affected user or record identifiers when appropriate, exact steps to reproduce, expected behavior, actual behavior, timestamps, screenshots when useful, and any relevant error messages. Sensitive data should be minimized and secrets such as passwords or API credentials must never be included.",
+    "content": "When should a support ticket be escalated to the technical team?\n\nSupport should escalate a case when normal troubleshooting has been completed and there is evidence of a product defect, unexpected data inconsistency, repeated integration failure without a configuration explanation, a security concern, or a service error affecting multiple users. Before escalation, the ticket should include the organization identifier, affected user or record identifiers when appropriate, exact steps to reproduce, expected behavior, actual behavior, timestamps, screenshots when useful, and any relevant error messages. Sensitive data should be minimized and secrets such as passwords or API credentials must never be included."
+  },
+  {
+    "id": 49,
+    "section": "SUPPORT ESCALATION",
+    "question": "What information should never be requested from a customer?",
+    "text": "Support agents must never ask customers to provide their current password, password-reset link, MFA secret, authenticator seed, full API credential, or other authentication secret. When troubleshooting an integration, support may ask for non-secret identifiers, timestamps, error messages, configuration screenshots with secrets hidden, or the last few characters of a credential only when necessary to identify which credential is in use. Customers who accidentally share a secret should be advised to rotate or revoke it.\n\n==================================================",
+    "content": "What information should never be requested from a customer?\n\nSupport agents must never ask customers to provide their current password, password-reset link, MFA secret, authenticator seed, full API credential, or other authentication secret. When troubleshooting an integration, support may ask for non-secret identifiers, timestamps, error messages, configuration screenshots with secrets hidden, or the last few characters of a credential only when necessary to identify which credential is in use. Customers who accidentally share a secret should be advised to rotate or revoke it.\n\n=================================================="
+  },
+  {
+    "id": 50,
+    "section": "INTENTIONALLY SIMILAR FAQ CASES FOR RETRIEVAL TESTING",
+    "question": "An employee says “I cannot log in.” What should support check first?",
+    "text": "Support should distinguish among forgotten credentials, temporary lockout, inactive accounts, and MFA problems. If the user forgot the password, use the password-reset flow. If the account has 5 failed attempts within 15 minutes, it may be locked for 20 minutes. If the employee has been deactivated, a password reset will not reactivate the account. If the organization requires MFA, the problem may instead be lost authenticator access. Support should identify which condition applies before recommending a solution, because these scenarios have different recovery procedures.",
+    "content": "An employee says “I cannot log in.” What should support check first?\n\nSupport should distinguish among forgotten credentials, temporary lockout, inactive accounts, and MFA problems. If the user forgot the password, use the password-reset flow. If the account has 5 failed attempts within 15 minutes, it may be locked for 20 minutes. If the employee has been deactivated, a password reset will not reactivate the account. If the organization requires MFA, the problem may instead be lost authenticator access. Support should identify which condition applies before recommending a solution, because these scenarios have different recovery procedures."
+  },
+  {
+    "id": 51,
+    "section": "INTENTIONALLY SIMILAR FAQ CASES FOR RETRIEVAL TESTING",
+    "question": "An employee says “My vacation days disappeared.” What should support check first?",
+    "text": "Support should review the employee’s Time Off > Balance Details rather than looking only at the annual entitlement. Relevant causes include approved future requests, already used days, monthly accrual, policy carryover, carryover expiration, manual adjustments, or a prorated entitlement based on the employee’s start date. If the balance changed around the beginning of a new entitlement year, support should verify the policy’s carryover rules. A lower available balance does not necessarily mean that vacation days were deleted or lost because of an error.\n\nEND OF KNOWLEDGE BASE",
+    "content": "An employee says “My vacation days disappeared.” What should support check first?\n\nSupport should review the employee’s Time Off > Balance Details rather than looking only at the annual entitlement. Relevant causes include approved future requests, already used days, monthly accrual, policy carryover, carryover expiration, manual adjustments, or a prorated entitlement based on the employee’s start date. If the balance changed around the beginning of a new entitlement year, support should verify the policy’s carryover rules. A lower available balance does not necessarily mean that vacation days were deleted or lost because of an error.\n\nEND OF KNOWLEDGE BASE"
+  }
+]
