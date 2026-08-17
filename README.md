@@ -4,6 +4,16 @@ PeopleFlow RAG Support is a Retrieval-Augmented Generation (RAG) system for a fi
 
 The system processes an internal FAQ knowledge base, generates embeddings, stores them in FAISS, retrieves the most relevant chunks for a user question, and generates a grounded answer with an LLM.
 
+## Why RAG
+
+This project uses RAG because the support knowledge lives in internal documentation that changes frequently: the system first retrieves the most relevant chunks and only then generates the answer, so the LLM responds from company documentation instead of its training data.
+
+This two-step approach provides:
+
+* **Updatable knowledge**: editing `faq_document.txt` and rebuilding the index updates the chatbot, with no model fine-tuning required.
+* **Transparency and source attribution**: every answer includes the `chunks_related` used to generate it, so each response can be audited.
+* **Reduced hallucination**: the prompt restricts the model to the retrieved context, and it abstains when the answer is not in the knowledge base.
+
 ## Project Structure
 
 ```text
