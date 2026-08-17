@@ -71,6 +71,8 @@ EMBEDDING_MODEL=text-embedding-3-small
 LLM_MODEL=gpt-4o-mini
 ```
 
+> **Note:** the repository includes a pre-built index (`data/index/`), so queries can be run directly after setup. Rebuilding the index is only required if `data/faq_document.txt` changes.
+
 ## Build the Vector Index
 
 Run:
