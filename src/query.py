@@ -1,9 +1,11 @@
 import json
 import os
+import sys
 
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import OpenAIError
 
+from src.embeddings import create_client
 from src.retriever import search_chunks
 
 
@@ -13,8 +15,6 @@ LLM_MODEL = os.getenv(
     "LLM_MODEL",
     "gpt-4o-mini",
 )
-
-client = OpenAI()
 
 
 def build_context(chunks: list[dict]) -> str:
@@ -72,6 +72,8 @@ USER QUESTION:
 {question}
 """.strip()
 
+    client = create_client()
+
     response = client.responses.create(
         model=LLM_MODEL,
         input=[
@@ -127,7 +129,21 @@ def main():
         "Enter your question: "
     ).strip()
 
-    result = query_rag(question)
+    try:
+        result = query_rag(question)
+
+    except ValueError as error:
+        print(f"Invalid input: {error}")
+        sys.exit(1)
+
+    except FileNotFoundError as error:
+        print(f"Missing index files: {error}")
+        print("Run 'python -m src.build_index' first.")
+        sys.exit(1)
+
+    except OpenAIError as error:
+        print(f"OpenAI API error: {error}")
+        sys.exit(1)
 
     print("\n" + "=" * 60)
     print("RAG RESPONSE")

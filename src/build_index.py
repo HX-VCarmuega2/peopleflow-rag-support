@@ -1,8 +1,10 @@
 import json
+import sys
 from pathlib import Path
 
 import faiss
 import numpy as np
+from openai import OpenAIError
 
 from src.chunking import chunk_by_faq, load_document
 from src.embeddings import create_embeddings
@@ -87,16 +89,29 @@ def save_faiss_index(
 
 
 def main():
-    print("Loading document...")
-    document = load_document()
+    try:
+        print("Loading document...")
+        document = load_document()
 
-    print("Creating chunks...")
-    chunks = chunk_by_faq(document)
+        print("Creating chunks...")
+        chunks = chunk_by_faq(document)
 
-    print(f"Generated chunks: {len(chunks)}")
+        print(f"Generated chunks: {len(chunks)}")
 
-    print("Generating embeddings...")
-    embeddings = create_embeddings(chunks)
+        print("Generating embeddings...")
+        embeddings = create_embeddings(chunks)
+
+    except FileNotFoundError as error:
+        print(f"Missing source document: {error}")
+        sys.exit(1)
+
+    except ValueError as error:
+        print(f"Invalid data: {error}")
+        sys.exit(1)
+
+    except OpenAIError as error:
+        print(f"OpenAI API error: {error}")
+        sys.exit(1)
 
     print(f"Generated embeddings: {len(embeddings)}")
 

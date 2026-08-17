@@ -1,8 +1,10 @@
 import json
+import sys
 from pathlib import Path
 
 import faiss
 import numpy as np
+from openai import OpenAIError
 
 from src.embeddings import create_embedding
 
@@ -109,10 +111,24 @@ def main():
         "Enter your question: "
     ).strip()
 
-    results = search_chunks(
-        question,
-        k=3,
-    )
+    try:
+        results = search_chunks(
+            question,
+            k=3,
+        )
+
+    except ValueError as error:
+        print(f"Invalid input: {error}")
+        sys.exit(1)
+
+    except FileNotFoundError as error:
+        print(f"Missing index files: {error}")
+        print("Run 'python -m src.build_index' first.")
+        sys.exit(1)
+
+    except OpenAIError as error:
+        print(f"OpenAI API error: {error}")
+        sys.exit(1)
 
     print("\n" + "=" * 60)
     print("TOP MATCHING CHUNKS")
