@@ -1,0 +1,83 @@
+[
+  {
+    "user_question": "I forgot my password and cannot access my account.",
+    "system_answer": "To reset your forgotten password, please select “Forgot password” on the PeopleFlow HR login page. A password-reset link will be sent to the email address associated with your account. The link will remain valid for 30 minutes and can be used only once. If you don’t receive the email, check your spam or junk folder and ensure that the email address you entered matches the one registered in PeopleFlow HR.",
+    "chunks_related": [
+      {
+        "chunk_id": 1,
+        "section": "ACCOUNT ACCESS AND SECURITY",
+        "question": "How can a user reset a forgotten password?",
+        "text": "If a user forgets their password, they must select “Forgot password” on the PeopleFlow HR login page. The system sends a password-reset link to the email address associated with the account. The link remains valid for 30 minutes and can be used only once. If the user requests several reset emails, only the most recently generated link remains valid. Support agents must never manually create or communicate a password on behalf of a user. If the reset email does not arrive, the user should first check the spam or junk folder and then confirm that the email address entered on the reset screen matches the address registered in PeopleFlow HR.",
+        "similarity": 0.45704254508018494
+      },
+      {
+        "chunk_id": 50,
+        "section": "INTENTIONALLY SIMILAR FAQ CASES FOR RETRIEVAL TESTING",
+        "question": "An employee says “I cannot log in.” What should support check first?",
+        "text": "Support should distinguish among forgotten credentials, temporary lockout, inactive accounts, and MFA problems. If the user forgot the password, use the password-reset flow. If the account has 5 failed attempts within 15 minutes, it may be locked for 20 minutes. If the employee has been deactivated, a password reset will not reactivate the account. If the organization requires MFA, the problem may instead be lost authenticator access. Support should identify which condition applies before recommending a solution, because these scenarios have different recovery procedures.",
+        "similarity": 0.4215049147605896
+      },
+      {
+        "chunk_id": 2,
+        "section": "ACCOUNT ACCESS AND SECURITY",
+        "question": "How can a logged-in user change their current password?",
+        "text": "A user who knows their current password can change it from Settings > Security > Change Password. The user must enter the current password and then enter the new password twice. New passwords must contain at least 12 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character. Changing a password from the Security page does not require an email link. This procedure is different from the “Forgot password” flow, which is intended for users who cannot log in. After a successful password change, existing browser sessions remain active, but mobile sessions may require the user to authenticate again.",
+        "similarity": 0.36616432666778564
+      }
+    ]
+  },
+  {
+    "user_question": "I cannot log in after several failed attempts. What should I do?",
+    "system_answer": "Your account may be temporarily locked after 5 failed login attempts within a 15-minute period. The lock lasts for 20 minutes. You can either wait for the lock to expire or use the “Forgot password” process to create a new password, which will also clear the failed-login counter.",
+    "chunks_related": [
+      {
+        "chunk_id": 3,
+        "section": "ACCOUNT ACCESS AND SECURITY",
+        "question": "What happens after too many failed login attempts?",
+        "text": "PeopleFlow HR temporarily locks password-based login after 5 failed attempts within a 15-minute period. The lock lasts 20 minutes. During the lockout, entering the correct password does not immediately restore access. Users can either wait until the lock expires or use the “Forgot password” process to create a new password. A successful password reset clears the failed-login counter. Administrators cannot manually remove the temporary lock from the admin dashboard. Repeated lockouts from multiple countries or unfamiliar IP addresses may trigger an additional security alert for the organization’s administrators.",
+        "similarity": 0.5526783466339111
+      },
+      {
+        "chunk_id": 50,
+        "section": "INTENTIONALLY SIMILAR FAQ CASES FOR RETRIEVAL TESTING",
+        "question": "An employee says “I cannot log in.” What should support check first?",
+        "text": "Support should distinguish among forgotten credentials, temporary lockout, inactive accounts, and MFA problems. If the user forgot the password, use the password-reset flow. If the account has 5 failed attempts within 15 minutes, it may be locked for 20 minutes. If the employee has been deactivated, a password reset will not reactivate the account. If the organization requires MFA, the problem may instead be lost authenticator access. Support should identify which condition applies before recommending a solution, because these scenarios have different recovery procedures.",
+        "similarity": 0.5073745250701904
+      },
+      {
+        "chunk_id": 2,
+        "section": "ACCOUNT ACCESS AND SECURITY",
+        "question": "How can a logged-in user change their current password?",
+        "text": "A user who knows their current password can change it from Settings > Security > Change Password. The user must enter the current password and then enter the new password twice. New passwords must contain at least 12 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character. Changing a password from the Security page does not require an email link. This procedure is different from the “Forgot password” flow, which is intended for users who cannot log in. After a successful password change, existing browser sessions remain active, but mobile sessions may require the user to authenticate again.",
+        "similarity": 0.3282732665538788
+      }
+    ]
+  },
+  {
+    "user_question": "Does PeopleFlow HR offer cryptocurrency payroll payments?",
+    "system_answer": "The answer is not available in the knowledge base.",
+    "chunks_related": [
+      {
+        "chunk_id": 23,
+        "section": "PAYROLL AND COMPENSATION",
+        "question": "Does PeopleFlow HR run payroll and send salary payments?",
+        "text": "PeopleFlow HR does not directly transfer salaries to employee bank accounts in the standard product. Instead, it stores HR and compensation data and can generate payroll-ready exports for supported payroll providers or CSV workflows. Some integrations can synchronize employee and compensation data with external payroll systems, but the final payroll calculation and payment are performed by the connected payroll provider. Customers should not tell employees that PeopleFlow HR itself has paid or withheld a salary unless they are referring to a separate payroll service explicitly contracted by the organization.",
+        "similarity": 0.7144147157669067
+      },
+      {
+        "chunk_id": 35,
+        "section": "INTEGRATIONS AND API",
+        "question": "Does PeopleFlow HR have an API?",
+        "text": "Yes. Enterprise customers can use the PeopleFlow HR REST API to access supported employee, organization, time-off, and attendance resources. API access must be enabled by an Organization Admin. Authentication uses API credentials created for an integration rather than a normal employee password. API credentials should be stored securely and never embedded in public client-side code. API access is subject to rate limits, and not every field visible in the PeopleFlow HR interface is necessarily exposed through the API.",
+        "similarity": 0.600537896156311
+      },
+      {
+        "chunk_id": 24,
+        "section": "PAYROLL AND COMPENSATION",
+        "question": "How can an administrator export payroll data?",
+        "text": "Authorized HR Admins, Organization Admins, or users with payroll-export permission can create an export from Payroll > Exports. The administrator selects the legal entity, payroll period, and export format. Before generating the file, PeopleFlow HR validates common issues such as missing employee identifiers or incomplete required compensation fields. Generated exports are stored in the export history for 90 days. Payroll files contain sensitive information and should be downloaded only by authorized users. Exporting payroll data does not lock employee records, so changes made afterward are not automatically reflected in a previously generated export.",
+        "similarity": 0.503422737121582
+      }
+    ]
+  }
+]
