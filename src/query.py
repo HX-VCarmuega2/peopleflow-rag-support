@@ -2,6 +2,11 @@ import json
 import os
 import sys
 
+# Printed before the heavy imports (faiss, numpy, openai), which can
+# take a few seconds to load. Only shown when run as a script.
+if __name__ == "__main__":
+    print("Starting the support assistant...")
+
 from dotenv import load_dotenv
 from openai import OpenAIError
 
@@ -107,10 +112,15 @@ def query_rag(
     if not question.strip():
         raise ValueError("Question cannot be empty.")
 
+    print("Searching the documentation...")
+
     chunks = search_chunks(
         question,
         k=k,
     )
+
+    print(f"Found {len(chunks)} relevant chunks.")
+    print("Generating answer...")
 
     answer = generate_answer(
         question,
