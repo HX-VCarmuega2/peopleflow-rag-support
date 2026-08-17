@@ -125,9 +125,12 @@ def query_rag(
 
 
 def main():
-    question = input(
-        "Enter your question: "
-    ).strip()
+    if len(sys.argv) > 1:
+        question = sys.argv[1].strip()
+    else:
+        question = input(
+            "Enter your question: "
+        ).strip()
 
     try:
         result = query_rag(question)

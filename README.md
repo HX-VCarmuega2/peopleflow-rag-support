@@ -89,13 +89,17 @@ The current knowledge base generates 51 chunks.
 
 ## Run a Query
 
-Run:
+Pass the question as a command-line argument:
+
+```bash
+python -m src.query "I forgot my password and cannot access my account."
+```
+
+Or run it in interactive mode:
 
 ```bash
 python -m src.query
 ```
-
-Example:
 
 ```text
 Enter your question: I forgot my password and cannot access my account.
